@@ -1,0 +1,108 @@
+header{
+    // BARRA DE NAVEGACION
+.nav {
+    background-color: $azulito;
+    min-height: 100px;
+    img {
+        height: 40px;
+    }
+    .navbar-toggler {
+        background-color: white;
+    }
+    .nav-link {
+        font-weight: 100;
+        font-family: "enlace";
+        font-size: large;
+        color: white;
+        &:hover {
+            color: $azulito;
+            background-color: rgba(255, 255, 255, 0.836);
+            transition: all 0.3s;
+        }
+    }
+    .navbar-collapse {
+        flex-grow: 0;
+    }
+}
+
+/* ---- GRILLA ---- */
+
+.grilla {
+    display: grid;
+    grid-template-columns: 1fr 1.1fr 1.1fr 1fr;
+    grid-template-rows: 0.5fr 0.5fr;
+    box-shadow: 0 0 10px 2px black;
+    margin: auto;
+    grid-template-areas:
+        "foto2 foto1 foto1 foto4"
+        "foto3 foto1 foto1 foto5";
+}
+
+.foto1 {
+    grid-area: foto1;
+    img {
+        width: 100%;
+    }
+}
+
+.foto2 {
+    grid-area: foto2;
+    img {
+        width: 100%;
+    }
+}
+
+.foto3 {
+    grid-area: foto3;
+    img {
+        width: 100%;
+    }
+}
+
+.foto4 {
+    grid-area: foto4;
+    img {
+        width: 100%;
+    }
+}
+
+.foto5 {
+    background-color: rgb(17, 210, 210);
+    grid-area: foto5;
+    img{
+        width: 100%;
+    }
+}
+
+/*---- FOTOS MOBILE ----*/
+
+.fotos-mob {
+    display: none;
+}
+
+// MEDIA QUERYS
+
+@media(max-width: 700px) {
+
+    .grilla {
+        display: none;
+    }
+
+    .fotos-mob {
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+    }
+
+    .fotos-mob img {
+        height: 70vw;
+
+    }
+}
+
+}
+
+
+
+
+
