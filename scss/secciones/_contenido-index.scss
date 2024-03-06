@@ -1,7 +1,26 @@
 .main{
-    // TITULO
+    // TITULOS
     h1{
         @extend .titulo;
+    }
+
+    .subtitulo {
+        font-family: "enlace";
+        font-size: 3vw;
+        text-align: start;
+        color: white;
+        padding: 1%;
+        background-color: #38B6FF;
+        border: solid rgba(0, 0, 0, 0.444);
+    }
+    .h2{
+        padding: 10px;
+        color: #58acdc;
+        text-align: center;
+        font-family: "enlace";
+        width: 80%;
+        margin: auto;
+        
     }
     
     // SECCION INDEX
@@ -26,30 +45,16 @@
        }
     }
 
-// SUBTITULO
-    .subtitulo {
-        font-family: "enlace";
-        font-size: 3vw;
-        text-align: start;
-        color: white;
-        padding: 1%;
-        background-color: #38B6FF;
-        border: solid rgba(0, 0, 0, 0.444);
-    }
  /*---- IFRAME ---- */
 .video {
     display: flex;
     justify-content: center;
+    iframe {
+        margin: 30px 0 30px 0;
+    }
 }
 
-.video iframe {
-    margin: 30px 0 30px 0;
-
-}
-
-
-// MEDIA QUERYS
-
+// MEDIA QUERYS INDEX
 @media(max-width: 700px){
     .titulo {
         font-size: 10vw;

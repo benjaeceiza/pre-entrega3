@@ -23,6 +23,24 @@
   background-color: #2f97d3;
   border: solid rgba(0, 0, 0, 0.444); }
 
+.nombre, .main .conteiner-section .formacion .linea .jugadores p, .main .banco .sup p {
+  font-size: 13px;
+  background-color: #2f97d3;
+  text-align: center;
+  padding: 3px;
+  margin: 0 4px;
+  color: white;
+  border-radius: 5%;
+  box-shadow: 0 0 20px 2px black;
+  border: 2px solid white; }
+
+.imagen-jugador, .main .conteiner-section .formacion .linea .jugadores img, .main .banco .sup img {
+  height: 120px;
+  margin: 45px;
+  margin-bottom: 0;
+  border-radius: 5%;
+  box-shadow: 0 0 10px 2px black; }
+
 header {
   /* ---- GRILLA ---- */
   /*---- FOTOS MOBILE ----*/ }
@@ -86,6 +104,21 @@ header {
 
 .main {
   /*---- IFRAME ---- */ }
+  .main .subtitulo {
+    font-family: "enlace";
+    font-size: 3vw;
+    text-align: start;
+    color: white;
+    padding: 1%;
+    background-color: #38B6FF;
+    border: solid rgba(0, 0, 0, 0.444); }
+  .main .h2 {
+    padding: 10px;
+    color: #58acdc;
+    text-align: center;
+    font-family: "enlace";
+    width: 80%;
+    margin: auto; }
   .main .section-p {
     display: flex;
     flex-direction: column;
@@ -101,19 +134,11 @@ header {
       justify-content: center; }
     .main .section-p img {
       height: 25vw; }
-  .main .subtitulo {
-    font-family: "enlace";
-    font-size: 3vw;
-    text-align: start;
-    color: white;
-    padding: 1%;
-    background-color: #38B6FF;
-    border: solid rgba(0, 0, 0, 0.444); }
   .main .video {
     display: flex;
     justify-content: center; }
-  .main .video iframe {
-    margin: 30px 0 30px 0; }
+    .main .video iframe {
+      margin: 30px 0 30px 0; }
   @media (max-width: 700px) {
     .main .titulo, .main h1 {
       font-size: 10vw; }
@@ -131,6 +156,91 @@ header {
         margin: 2px; }
       .main .section-p .contenedor-m .tamano {
         height: 250px; } }
+
+.main .conteiner-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 50px; }
+  .main .conteiner-section .formacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../recursos/cancha.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: solid black; }
+    .main .conteiner-section .formacion .linea {
+      display: flex; }
+      .main .conteiner-section .formacion .linea .jugadores {
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+  .main .conteiner-section .estadisticas {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #2f97d3;
+    margin: 20px;
+    border-radius: 2%;
+    border: solid rgba(0, 0, 0, 0.42); }
+    .main .conteiner-section .estadisticas p {
+      text-align: center;
+      background-color: #58acdc;
+      color: white;
+      min-width: 10vw; }
+    .main .conteiner-section .estadisticas .div-estadistica {
+      display: flex;
+      justify-content: center;
+      padding: 20px; }
+      .main .conteiner-section .estadisticas .div-estadistica p {
+        color: white;
+        background-color: #2f97d3; }
+      .main .conteiner-section .estadisticas .div-estadistica img {
+        height: 20px;
+        margin: 0 10px; }
+    .main .conteiner-section .estadisticas .lista-estadistica {
+      list-style: none;
+      color: white; }
+
+.main .banco {
+  background-color: #2f97d3;
+  width: 90%;
+  margin: auto;
+  margin-bottom: 20px;
+  border-radius: 1%;
+  border: solid rgba(0, 0, 0, 0.42); }
+  .main .banco .sup {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    flex-wrap: wrap; }
+    .main .banco .sup img {
+      margin: 10px; }
+
+@media (max-width: 994px) {
+  .main .conteiner-section .estadisticas {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start; } }
+
+@media (max-width: 700px) {
+  .main .conteiner-section .formacion {
+    background-position: center;
+    width: 90%; }
+    .main .conteiner-section .formacion .linea .jugadores img {
+      height: 20vw;
+      margin: 10px 10px; }
+    .main .conteiner-section .formacion .linea .jugadores p {
+      font-size: 10px; }
+  .main .conteiner-section .estadisticas {
+    width: 80%;
+    overflow: hidden;
+    margin: auto; } }
 
 .footer {
   background-color: #38B6FF;

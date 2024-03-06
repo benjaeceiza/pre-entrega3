@@ -1,0 +1,148 @@
+.main {
+
+    // FORMACION
+    .conteiner-section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 50px;
+
+        .formacion {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-image: url(../recursos/cancha.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            border: solid black;
+
+            .linea {
+                display: flex;
+
+                .jugadores {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    img {
+                        @extend .imagen-jugador;
+                    }
+
+                    p {
+                        @extend .nombre;
+                    }
+                }
+            }
+        }
+
+        // ESTADISTICAS
+        .estadisticas {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-items: center;
+            background-color: $azul-clarito;
+            margin: 20px;
+            border-radius: 2%;
+            border: $borde;
+
+            p {
+                text-align: center;
+                background-color: #58acdc;
+                color: white;
+                min-width: 10vw;
+            }
+
+            .div-estadistica {
+                display: flex;
+                justify-content: center;
+                padding: 20px;
+
+                p {
+                    color: white;
+                    background-color: $azul-clarito;
+                }
+
+                img {
+                    height: 20px;
+                    margin: 0 10px;
+                }
+            }
+
+            .lista-estadistica {
+                list-style: none;
+                color: white;
+            }
+        }
+    }
+
+    // BANCO
+    .banco {
+        background-color: $azul-clarito;
+        width: 90%;
+        margin: auto;
+        margin-bottom: 20px;
+        border-radius: 1%;
+        border: $borde;
+
+        .sup {
+            display: flex;
+            justify-content: center;
+            margin-top: 40px;
+            flex-wrap: wrap;
+
+            img {
+                @extend .imagen-jugador;
+                margin: 10px
+            }
+
+            p {
+                @extend .nombre;
+
+            }
+        }
+    }
+
+
+    // MEDIA QUERYS
+    @media(max-width:994px) {
+        .conteiner-section {
+            .estadisticas {
+                width: 90%;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: start;
+            }
+        }
+    }
+
+    @media(max-width:700px) {
+        .conteiner-section {
+            .formacion {
+                background-position:center;
+                width: 90%;
+                .linea {
+                    .jugadores {
+                        img {
+                            height: 20vw;
+                            margin: 10px 10px;
+                            
+                        }
+                        p{
+                           font-size:10px;
+                        }
+                    }
+                }
+            }
+            .estadisticas {
+                width: 80%;
+                overflow: hidden;
+                margin: auto;
+            }
+        }
+    }
+
+
+}

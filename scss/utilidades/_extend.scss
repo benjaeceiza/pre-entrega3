@@ -8,3 +8,22 @@
     border: solid rgba(0, 0, 0, 0.444);
 }
 
+.nombre{
+    font-size: 13px;
+    background-color: $azul-clarito;
+    text-align: center;
+    padding: 3px;
+    margin: 0 4px;
+    color: white;
+    border-radius: 5%;
+    box-shadow: 0 0 20px 2px black;
+    border: 2px solid white ; 
+}
+
+.imagen-jugador{
+    height: 120px;
+    margin: 45px;
+    margin-bottom: 0;
+    border-radius: 5%;
+    box-shadow: 0 0 10px 2px black;
+}
