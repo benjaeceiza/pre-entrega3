@@ -1,13 +1,13 @@
 .titulo {
-    font-family: "titulo";
+    font-family: "enlace";
     font-size: 5vw;
     text-align: center;
-    color: white;
+    color:rgb(53, 53, 53);
     padding: 2%;
     background-color:$azul-clarito;
-    border: solid rgba(0, 0, 0, 0.444);
+    border: $borde;
+    background-image: url(/recursos/fondo-partido.avif);
 }
-
 .nombre{
     font-size: 13px;
     background-color: $azul-clarito;

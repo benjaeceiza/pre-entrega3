@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("/recursos/Hangout.ttf");
 @import url("/recursos/Hangout3D.ttf");
 @font-face {
@@ -15,15 +16,16 @@
   box-sizing: border-box; }
 
 .titulo, .main h1 {
-  font-family: "titulo";
+  font-family: "enlace";
   font-size: 5vw;
   text-align: center;
-  color: white;
+  color: #353535;
   padding: 2%;
   background-color: #2f97d3;
-  border: solid rgba(0, 0, 0, 0.444); }
+  border: solid rgba(240, 237, 86, 0.925);
+  background-image: url(/recursos/fondo-partido.avif); }
 
-.nombre, .main .conteiner-section .formacion .linea .jugadores p, .main .banco .sup p {
+.nombre, .main .conteiner-section .formacion .linea .jugadores p, .main .banco .sup .jugadores p {
   font-size: 13px;
   background-color: #2f97d3;
   text-align: center;
@@ -34,7 +36,7 @@
   box-shadow: 0 0 20px 2px black;
   border: 2px solid white; }
 
-.imagen-jugador, .main .conteiner-section .formacion .linea .jugadores img, .main .banco .sup img {
+.imagen-jugador, .main .conteiner-section .formacion .linea .jugadores img, .main .banco .sup .jugadores img {
   height: 120px;
   margin: 45px;
   margin-bottom: 0;
@@ -110,11 +112,11 @@ header {
     text-align: start;
     color: white;
     padding: 1%;
-    background-color: #38B6FF;
-    border: solid rgba(0, 0, 0, 0.444); }
+    background-image: url(/recursos/fondo-partido.avif);
+    border: solid rgba(240, 237, 86, 0.925); }
   .main .h2 {
     padding: 10px;
-    color: #58acdc;
+    color: #c4b148;
     text-align: center;
     font-family: "enlace";
     width: 80%;
@@ -182,28 +184,33 @@ header {
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
-    background-color: #2f97d3;
+    background-image: url(/recursos/fondo-copía.avif);
+    background-size: cover;
     margin: 20px;
-    border-radius: 2%;
-    border: solid rgba(0, 0, 0, 0.42); }
-    .main .conteiner-section .estadisticas p {
-      text-align: center;
-      background-color: #58acdc;
-      color: white;
-      min-width: 10vw; }
+    border-radius: 1%;
+    border: solid rgba(240, 237, 86, 0.925); }
     .main .conteiner-section .estadisticas .div-estadistica {
       display: flex;
       justify-content: center;
-      padding: 20px; }
-      .main .conteiner-section .estadisticas .div-estadistica p {
-        color: white;
-        background-color: #2f97d3; }
+      margin: 10px 0; }
       .main .conteiner-section .estadisticas .div-estadistica img {
-        height: 20px;
-        margin: 0 10px; }
+        height: 30px;
+        margin-top: 8px; }
+      .main .conteiner-section .estadisticas .div-estadistica .parrafo-estadistica {
+        margin-top: 8px;
+        color: white;
+        font-family: 'enlace';
+        font-size: 20px;
+        margin-right: 5px; }
+    .main .conteiner-section .estadisticas .titulo-estadistica {
+      text-align: center;
+      background-color: white;
+      color: #ac9309;
+      border: solid rgba(240, 237, 86, 0.925);
+      min-width: 10vw; }
     .main .conteiner-section .estadisticas .lista-estadistica {
       list-style: none;
-      color: white; }
+      color: black; }
 
 .main .banco {
   background-color: #2f97d3;
@@ -211,36 +218,48 @@ header {
   margin: auto;
   margin-bottom: 20px;
   border-radius: 1%;
-  border: solid rgba(0, 0, 0, 0.42); }
+  border: solid rgba(240, 237, 86, 0.925);
+  background-image: url(/recursos/fondo-partido.avif);
+  background-size: cover; }
   .main .banco .sup {
     display: flex;
-    justify-content: center;
-    margin-top: 40px;
+    justify-content: space-around;
+    align-items: center;
     flex-wrap: wrap; }
-    .main .banco .sup img {
-      margin: 10px; }
+    .main .banco .sup .jugadores img {
+      margin-bottom: 5px; }
+    .main .banco .sup .jugadores p {
+      width: 70%;
+      margin: auto; }
 
 @media (max-width: 994px) {
   .main .conteiner-section .estadisticas {
     width: 90%;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     align-items: start; } }
 
 @media (max-width: 700px) {
   .main .conteiner-section .formacion {
     background-position: center;
     width: 90%; }
-    .main .conteiner-section .formacion .linea .jugadores img {
-      height: 20vw;
-      margin: 10px 10px; }
-    .main .conteiner-section .formacion .linea .jugadores p {
-      font-size: 10px; }
+    .main .conteiner-section .formacion .linea .jugadores {
+      margin: 10px 0px; }
+      .main .conteiner-section .formacion .linea .jugadores img {
+        height: 20vw;
+        margin: 0px 10px; }
+      .main .conteiner-section .formacion .linea .jugadores p {
+        font-size: 10px; }
   .main .conteiner-section .estadisticas {
     width: 80%;
     overflow: hidden;
     margin: auto; } }
+
+.main--activo {
+  background-image: url(/recursos/descarga.jpg);
+  padding-bottom: 10px;
+  background-position: center; }
 
 .footer {
   background-color: #38B6FF;

@@ -41,38 +41,45 @@
             display: flex;
             flex-direction: column;
             flex-wrap: wrap;
+          
             align-items: center;
-            background-color: $azul-clarito;
+            background-image: url(/recursos/fondo-copía.avif);
+            background-size: cover;
             margin: 20px;
-            border-radius: 2%;
+            border-radius: 1%;
             border: $borde;
-
-            p {
-                text-align: center;
-                background-color: #58acdc;
-                color: white;
-                min-width: 10vw;
-            }
 
             .div-estadistica {
                 display: flex;
                 justify-content: center;
-                padding: 20px;
-
-                p {
-                    color: white;
-                    background-color: $azul-clarito;
-                }
+                margin: 10px 0;
 
                 img {
-                    height: 20px;
-                    margin: 0 10px;
+                    height: 30px;
+                    margin-top: 8px;
+                }
+
+                .parrafo-estadistica {
+                    margin-top: 8px;
+                    color: white;
+                    font-family: 'enlace';
+                    font-size: 20px;
+                    margin-right: 5px;
                 }
             }
 
+            .titulo-estadistica {
+                text-align: center;
+                background-color: white;
+                color: rgb(172, 147, 9);
+                border: $borde;
+                min-width: 10vw;
+            }
+
+
             .lista-estadistica {
                 list-style: none;
-                color: white;
+                color: rgb(0, 0, 0);
             }
         }
     }
@@ -85,22 +92,29 @@
         margin-bottom: 20px;
         border-radius: 1%;
         border: $borde;
+        background-image: url(/recursos/fondo-partido.avif);
+        background-size: cover;
 
         .sup {
             display: flex;
-            justify-content: center;
-            margin-top: 40px;
+            justify-content: space-around;
+            align-items: center;
             flex-wrap: wrap;
 
-            img {
-                @extend .imagen-jugador;
-                margin: 10px
+            .jugadores {
+                img {
+                    @extend .imagen-jugador;
+                    margin-bottom: 5px
+                }
+
+                p {
+                    @extend .nombre;
+                     width: 70%;
+                     margin: auto;
+                }
             }
 
-            p {
-                @extend .nombre;
 
-            }
         }
     }
 
@@ -112,8 +126,9 @@
                 width: 90%;
                 display: flex;
                 flex-direction: row;
-                justify-content: center;
+                justify-content: space-around;
                 align-items: start;
+
             }
         }
     }
@@ -121,21 +136,25 @@
     @media(max-width:700px) {
         .conteiner-section {
             .formacion {
-                background-position:center;
+                background-position: center;
                 width: 90%;
+
                 .linea {
                     .jugadores {
+                        margin: 10px 0px;
+
                         img {
                             height: 20vw;
-                            margin: 10px 10px;
-                            
+                            margin: 0px 10px;
                         }
-                        p{
-                           font-size:10px;
+
+                        p {
+                            font-size: 10px;
                         }
                     }
                 }
             }
+
             .estadisticas {
                 width: 80%;
                 overflow: hidden;
@@ -143,6 +162,10 @@
             }
         }
     }
+}
 
-
+.main--activo {
+    background-image: url(/recursos/descarga.jpg);
+    padding-bottom: 10px;
+    background-position: center;
 }
