@@ -69,7 +69,8 @@
     grid-template-rows: 0.5fr 0.5fr;
     box-shadow: 0 0 10px 2px black;
     margin: auto;
-    grid-template-areas: "foto2 foto1 foto1 foto4" "foto3 foto1 foto1 foto5"; }
+    grid-template-areas: "foto2 foto1 foto1 foto4"
+ "foto3 foto1 foto1 foto5"; }
   .header .foto1 {
     grid-area: foto1; }
     .header .foto1 img {
@@ -183,7 +184,7 @@
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
-    background-image: url(/recursos/fondo-copia.jpeg);
+    background-image: url(../recursos/fondo-copia.jpeg);
     background-size: cover;
     margin: 20px;
     border-radius: 1%;
@@ -218,7 +219,7 @@
   margin-bottom: 20px;
   border-radius: 1%;
   border: solid rgba(240, 237, 86, 0.925);
-  background-image: url(/recursos/fondo-partido.jpeg);
+  background-image: url(../recursos/fondo-partido.jpeg);
   background-size: cover; }
   .main .banco .sup {
     display: flex;
