@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("/recursos/Hangout.ttf");
 @import url("/recursos/Hangout3D.ttf");
 @font-face {
@@ -23,7 +22,7 @@
   padding: 2%;
   background-color: #2f97d3;
   border: solid rgba(240, 237, 86, 0.925);
-  background-image: url(/recursos/fondo-partido.avif); }
+  background-image: url(/recursos/fondo-partido.jpeg); }
 
 .nombre, .main .conteiner-section .formacion .linea .jugadores p, .main .banco .sup .jugadores p {
   font-size: 13px;
@@ -43,65 +42,65 @@
   border-radius: 5%;
   box-shadow: 0 0 10px 2px black; }
 
-header {
+.header {
   /* ---- GRILLA ---- */
   /*---- FOTOS MOBILE ----*/ }
-  header .nav {
+  .header .nav {
     background-color: #38B6FF;
     min-height: 100px; }
-    header .nav img {
+    .header .nav img {
       height: 40px; }
-    header .nav .navbar-toggler {
+    .header .nav .navbar-toggler {
       background-color: white; }
-    header .nav .nav-link {
+    .header .nav .nav-link {
       font-weight: 100;
       font-family: "enlace";
       font-size: large;
       color: white; }
-      header .nav .nav-link:hover {
+      .header .nav .nav-link:hover {
         color: #38B6FF;
         background-color: rgba(255, 255, 255, 0.836);
         transition: all 0.3s; }
-    header .nav .navbar-collapse {
+    .header .nav .navbar-collapse {
       flex-grow: 0; }
-  header .grilla {
+  .header .grilla {
     display: grid;
     grid-template-columns: 1fr 1.1fr 1.1fr 1fr;
     grid-template-rows: 0.5fr 0.5fr;
     box-shadow: 0 0 10px 2px black;
     margin: auto;
     grid-template-areas: "foto2 foto1 foto1 foto4" "foto3 foto1 foto1 foto5"; }
-  header .foto1 {
+  .header .foto1 {
     grid-area: foto1; }
-    header .foto1 img {
+    .header .foto1 img {
       width: 100%; }
-  header .foto2 {
+  .header .foto2 {
     grid-area: foto2; }
-    header .foto2 img {
+    .header .foto2 img {
       width: 100%; }
-  header .foto3 {
+  .header .foto3 {
     grid-area: foto3; }
-    header .foto3 img {
+    .header .foto3 img {
       width: 100%; }
-  header .foto4 {
+  .header .foto4 {
     grid-area: foto4; }
-    header .foto4 img {
+    .header .foto4 img {
       width: 100%; }
-  header .foto5 {
+  .header .foto5 {
     background-color: #11d2d2;
     grid-area: foto5; }
-    header .foto5 img {
+    .header .foto5 img {
       width: 100%; }
-  header .fotos-mob {
+  .header .fotos-mob {
     display: none; }
   @media (max-width: 700px) {
-    header .grilla {
+    .header .grilla {
       display: none; }
-    header .fotos-mob {
+    .header .fotos-mob {
       display: flex;
       justify-content: center;
       overflow: hidden; }
-    header .fotos-mob img {
+    .header .fotos-mob img {
       height: 70vw; } }
 
 .main {
@@ -112,7 +111,7 @@ header {
     text-align: start;
     color: white;
     padding: 1%;
-    background-image: url(/recursos/fondo-partido.avif);
+    background-image: url(/recursos/fondo-partido.jpeg);
     border: solid rgba(240, 237, 86, 0.925); }
   .main .h2 {
     padding: 10px;
@@ -184,7 +183,7 @@ header {
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
-    background-image: url(/recursos/fondo-copía.avif);
+    background-image: url(/recursos/fondo-copia.jpeg);
     background-size: cover;
     margin: 20px;
     border-radius: 1%;
@@ -219,7 +218,7 @@ header {
   margin-bottom: 20px;
   border-radius: 1%;
   border: solid rgba(240, 237, 86, 0.925);
-  background-image: url(/recursos/fondo-partido.avif);
+  background-image: url(/recursos/fondo-partido.jpeg);
   background-size: cover; }
   .main .banco .sup {
     display: flex;
