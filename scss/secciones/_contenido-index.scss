@@ -1,6 +1,7 @@
-.main{
+.main {
+
     // TITULOS
-    h1{
+    h1 {
         @extend .titulo;
     }
 
@@ -13,78 +14,318 @@
         background-image: url(../recursos/fondo-partido.jpeg);
         border: $borde;
     }
-    .h2{
+
+    .h2 {
         padding: 10px;
         color: rgb(196, 177, 72);
         text-align: center;
         font-family: "enlace";
         width: 80%;
         margin: auto;
-        
+
     }
-    
+
     // SECCION INDEX
     .section-p {
         display: flex;
         flex-direction: column;
         align-items: center;
-        .parrafo{
+
+        .parrafo {
             width: 80%;
             text-align: justify;
             margin: auto;
             margin: 30px;
         }
+
         //CONTENEDOR DE FOTOS
-        .contenedor-m{
+        .contenedor-m {
             display: flex;
             flex-direction: row;
             justify-content: center;
         }
-       img{
-        height: 25vw;
-       }
-    }
 
- /*---- IFRAME ---- */
-.video {
-    display: flex;
-    justify-content: center;
-    iframe {
-        margin: 30px 0 30px 0;
-    }
-}
-// MEDIA QUERYS INDEX
-@media(max-width: 700px){
-    .titulo {
-        font-size: 10vw;
-    }
-
-    .subtitulo {
-        font-size: 5vw;
-    }
-
-    #foto {
-        height: 50vw;
-    }
-
-    .video iframe {
-        width: 100%;
-    }
-}
-
-@media(max-width:500px){
-
-  .section-p{
-    .contenedor-m{
-        flex-direction: column;
         img {
-            height: 20vh;
-            margin: 2px;
-        }
-        .tamano {
-            height: 250px;
+            height: 25vw;
         }
     }
+
+    /*---- IFRAME ---- */
+    .video {
+        display: flex;
+        justify-content: center;
+
+        iframe {
+            margin: 30px 0 30px 0;
+        }
+    }
+
+    //------- PAGES 2022, 1986, 1978 --------
+
+    // FORMACION
+    .conteiner-section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 50px;
+
+        .formacion {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-image: url(../recursos/cancha.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            border: solid black;
+
+            .linea {
+                display: flex;
+
+                .jugadores {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    img {
+                        @extend .imagen-jugador;
+                    }
+
+                    p {
+                        @extend .nombre;
+                    }
+                }
+            }
+        }
+
+        // ESTADISTICAS
+        .estadisticas {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-items: center;
+            background-image: url(../recursos/fondo-copia.jpeg);
+            background-size: cover;
+            margin: 20px;
+            border-radius: 1%;
+            border: $borde;
+
+            .div-estadistica {
+                display: flex;
+                justify-content: center;
+                margin: 10px 0;
+
+                img {
+                    height: 30px;
+                    margin-top: 8px;
+                }
+
+                .parrafo-estadistica {
+                    margin-top: 8px;
+                    color: white;
+                    font-family: 'enlace';
+                    font-size: 20px;
+                    margin-right: 5px;
+                }
+            }
+
+            .titulo-estadistica {
+                text-align: center;
+                background-color: white;
+                color: rgb(172, 147, 9);
+                border: $borde;
+                min-width: 10vw;
+            }
+
+
+            .lista-estadistica {
+                list-style: none;
+                color: rgb(0, 0, 0);
+            }
+        }
+    }
+
+    // BANCO
+    .banco {
+        background-color: $azul-clarito;
+        width: 90%;
+        margin: auto;
+        margin-bottom: 20px;
+        border-radius: 1%;
+        border: $borde;
+        background-image: url(../recursos/fondo-partido.jpeg);
+        background-size: cover;
+
+        .sup {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+
+            .jugadores {
+                img {
+                    @extend .imagen-jugador;
+                    margin-bottom: 5px
+                }
+
+                p {
+                    @extend .nombre;
+                    width: 70%;
+                    margin: auto;
+                }
+            }
+
+
+        }
+    }
+
+    /* ------------ PAGE RECORRIDO QATAR -------------- */
+    .recorrido {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .partido {
+            text-align: center;
+            background-color: rgb(39, 48, 54);
+            width: 90%;
+            padding: 40px 0px;
+            margin: 50px;
+            border-radius: 2%;
+            background-image: url(../recursos/fondo-rojo.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+
+            .titulo-recorrido {
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                background-color: #58acdc;
+                width: 80%;
+                border: rgba(0, 0, 0, 0.374) solid;
+                border-radius: 2%;
+                box-shadow: 0px 0px 10px 2px black;
+                margin: auto;
+                margin-top: 20px;
+                background-image: url(../recursos/fondo-partido.jpeg);
+
+                .bandera-recorrido {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    padding: 10px 10px 0px 10px;
+
+                    .pais {
+                        color: white;
+                    }
+                }
+
+                .versus {
+                    font-size: 5vw;
+                    color: white;
+                    font-family: "enlace";
+                }
+            }
+
+            img {
+                width: 100px;
+            }
+
+            .vidio {
+                width: 50%;
+                box-shadow: 0px 0px 10px 2px black;
+                margin-top: 50px;
+            }
+
+        }
+    }
+   
+    // MEDIA QUERYS ESTADISTICAS
+    @media(max-width:994px) {
+        .conteiner-section {
+            .estadisticas {
+                width: 90%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: start;
+
+            }
+        }
+    }
+
+    // MEDIA QUERYS INDEX + TITULO + SUBTITULO
+    @media(max-width: 700px) {
+        .titulo {
+            font-size: 10vw;
+        }
+
+        .subtitulo {
+            font-size: 5vw;
+        }
+
+        #foto {
+            height: 50vw;
+        }
+
+        .video iframe {
+            width: 100%;
+        }
+
+// MEDIA QUERYS FORMACION JUGADORES
+        .conteiner-section {
+            .formacion {
+                background-position: center;
+                width: 90%;
+
+                .linea {
+                    .jugadores {
+                        margin: 10px 0px;
+
+                        img {
+                            height: 20vw;
+                            margin: 0px 10px;
+                        }
+
+                        p {
+                            font-size: 10px;
+                        }
+                    }
+                }
+            }
+
+            .estadisticas {
+                width: 80%;
+                overflow: hidden;
+                margin: auto;
+            }
+        }
+    }
+
+    // MEDIA QUERYS INDEX IMAGENES
+    @media(max-width:500px) {
+
+        .section-p {
+            .contenedor-m {
+                flex-direction: column;
+
+                img {
+                    height: 20vh;
+                    margin: 2px;
+                }
+
+                .tamano {
+                    height: 250px;
+                }
+            }
+        }
     }
 }
+
+.main--activo {
+    background-image: url(../recursos/descarga.jpg);
+    padding-bottom: 10px;
+    background-position: center;
 }
