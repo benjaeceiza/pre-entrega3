@@ -22,7 +22,7 @@
   padding: 2%;
   background-color: #2f97d3;
   border: solid rgba(240, 237, 86, 0.925);
-  background-image: url(/recursos/fondo-partido.jpeg); }
+  background-image: url(../recursos/fondo-partido.jpeg); }
 
 .nombre, .main .conteiner-section .formacion .linea .jugadores p, .main .banco .sup .jugadores p {
   font-size: 13px;
@@ -111,7 +111,7 @@
     text-align: start;
     color: white;
     padding: 1%;
-    background-image: url(/recursos/fondo-partido.jpeg);
+    background-image: url(../recursos/fondo-partido.jpeg);
     border: solid rgba(240, 237, 86, 0.925); }
   .main .h2 {
     padding: 10px;
@@ -158,102 +158,145 @@
       .main .section-p .contenedor-m .tamano {
         height: 250px; } }
 
-.main .conteiner-section {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-top: 50px; }
-  .main .conteiner-section .formacion {
+.main {
+  /* ------------ PAGE RECORRIDO QATAR -------------- */ }
+  .main .conteiner-section {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    background-image: url(../recursos/cancha.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    border: solid black; }
-    .main .conteiner-section .formacion .linea {
-      display: flex; }
-      .main .conteiner-section .formacion .linea .jugadores {
-        display: flex;
-        flex-direction: column;
-        align-items: center; }
-  .main .conteiner-section .estadisticas {
-    display: flex;
-    flex-direction: column;
+    justify-content: center;
     flex-wrap: wrap;
-    align-items: center;
-    background-image: url(/recursos/fondo-copia.jpeg);
-    background-size: cover;
-    margin: 20px;
-    border-radius: 1%;
-    border: solid rgba(240, 237, 86, 0.925); }
-    .main .conteiner-section .estadisticas .div-estadistica {
+    margin-top: 50px; }
+    .main .conteiner-section .formacion {
       display: flex;
-      justify-content: center;
-      margin: 10px 0; }
-      .main .conteiner-section .estadisticas .div-estadistica img {
-        height: 30px;
-        margin-top: 8px; }
-      .main .conteiner-section .estadisticas .div-estadistica .parrafo-estadistica {
-        margin-top: 8px;
-        color: white;
-        font-family: 'enlace';
-        font-size: 20px;
-        margin-right: 5px; }
-    .main .conteiner-section .estadisticas .titulo-estadistica {
-      text-align: center;
-      background-color: white;
-      color: #ac9309;
-      border: solid rgba(240, 237, 86, 0.925);
-      min-width: 10vw; }
-    .main .conteiner-section .estadisticas .lista-estadistica {
-      list-style: none;
-      color: black; }
-
-.main .banco {
-  background-color: #2f97d3;
-  width: 90%;
-  margin: auto;
-  margin-bottom: 20px;
-  border-radius: 1%;
-  border: solid rgba(240, 237, 86, 0.925);
-  background-image: url(/recursos/fondo-partido.jpeg);
-  background-size: cover; }
-  .main .banco .sup {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap; }
-    .main .banco .sup .jugadores img {
-      margin-bottom: 5px; }
-    .main .banco .sup .jugadores p {
-      width: 70%;
-      margin: auto; }
-
-@media (max-width: 994px) {
-  .main .conteiner-section .estadisticas {
+      flex-direction: column;
+      align-items: center;
+      background-image: url(../recursos/cancha.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      border: solid black; }
+      .main .conteiner-section .formacion .linea {
+        display: flex; }
+        .main .conteiner-section .formacion .linea .jugadores {
+          display: flex;
+          flex-direction: column;
+          align-items: center; }
+    .main .conteiner-section .estadisticas {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-items: center;
+      background-image: url(../recursos/fondo-copia.jpeg);
+      background-size: cover;
+      margin: 20px;
+      border-radius: 1%;
+      border: solid rgba(240, 237, 86, 0.925); }
+      .main .conteiner-section .estadisticas .div-estadistica {
+        display: flex;
+        justify-content: center;
+        margin: 10px 0; }
+        .main .conteiner-section .estadisticas .div-estadistica img {
+          height: 30px;
+          margin-top: 8px; }
+        .main .conteiner-section .estadisticas .div-estadistica .parrafo-estadistica {
+          margin-top: 8px;
+          color: white;
+          font-family: 'enlace';
+          font-size: 20px;
+          margin-right: 5px; }
+      .main .conteiner-section .estadisticas .titulo-estadistica {
+        text-align: center;
+        background-color: white;
+        color: #ac9309;
+        border: solid rgba(240, 237, 86, 0.925);
+        min-width: 10vw; }
+      .main .conteiner-section .estadisticas .lista-estadistica {
+        list-style: none;
+        color: black; }
+  .main .banco {
+    background-color: #2f97d3;
     width: 90%;
+    margin: auto;
+    margin-bottom: 20px;
+    border-radius: 1%;
+    border: solid rgba(240, 237, 86, 0.925);
+    background-image: url(../recursos/fondo-partido.jpeg);
+    background-size: cover; }
+    .main .banco .sup {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap; }
+      .main .banco .sup .jugadores img {
+        margin-bottom: 5px; }
+      .main .banco .sup .jugadores p {
+        width: 70%;
+        margin: auto; }
+  .main .recorrido {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: start; } }
-
-@media (max-width: 700px) {
-  .main .conteiner-section .formacion {
-    background-position: center;
-    width: 90%; }
-    .main .conteiner-section .formacion .linea .jugadores {
-      margin: 10px 0px; }
-      .main .conteiner-section .formacion .linea .jugadores img {
-        height: 20vw;
-        margin: 0px 10px; }
-      .main .conteiner-section .formacion .linea .jugadores p {
-        font-size: 10px; }
-  .main .conteiner-section .estadisticas {
-    width: 80%;
-    overflow: hidden;
-    margin: auto; } }
+    flex-direction: column;
+    align-items: center; }
+    .main .recorrido .partido {
+      text-align: center;
+      background-color: #273036;
+      width: 90%;
+      padding: 40px 0px;
+      margin: 50px;
+      border-radius: 2%;
+      background-image: url(../recursos/fondo-rojo.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover; }
+      .main .recorrido .partido .titulo-recorrido {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        background-color: #58acdc;
+        width: 80%;
+        border: rgba(0, 0, 0, 0.374) solid;
+        border-radius: 2%;
+        box-shadow: 0px 0px 10px 2px black;
+        margin: auto;
+        margin-top: 20px;
+        background-image: url(../recursos/fondo-partido.jpeg); }
+        .main .recorrido .partido .titulo-recorrido .bandera-recorrido {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding: 10px 10px 0px 10px; }
+          .main .recorrido .partido .titulo-recorrido .bandera-recorrido .pais {
+            color: white; }
+        .main .recorrido .partido .titulo-recorrido .versus {
+          font-size: 5vw;
+          color: white;
+          font-family: "enlace"; }
+      .main .recorrido .partido img {
+        width: 100px; }
+      .main .recorrido .partido .vidio {
+        width: 50%;
+        box-shadow: 0px 0px 10px 2px black;
+        margin-top: 50px; }
+  @media (max-width: 994px) {
+    .main .conteiner-section .estadisticas {
+      width: 90%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: start; } }
+  @media (max-width: 700px) {
+    .main .conteiner-section .formacion {
+      background-position: center;
+      width: 90%; }
+      .main .conteiner-section .formacion .linea .jugadores {
+        margin: 10px 0px; }
+        .main .conteiner-section .formacion .linea .jugadores img {
+          height: 20vw;
+          margin: 0px 10px; }
+        .main .conteiner-section .formacion .linea .jugadores p {
+          font-size: 10px; }
+    .main .conteiner-section .estadisticas {
+      width: 80%;
+      overflow: hidden;
+      margin: auto; } }
 
 .main--activo {
   background-image: url(/recursos/descarga.jpg);
