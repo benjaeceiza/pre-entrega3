@@ -8,16 +8,16 @@ $borde:solid rgba(240, 237, 86, 0.925);
 
 
 // fuentes
-@import url('/recursos/Hangout.ttf');
+@import url('../recursos/Hangout.ttf');
 @font-face {
     font-family:'enlace';
-    src: url('/recursos/Hangout.ttf');
+    src: url('../recursos/Hangout.ttf');
 }
 
-@import url('/recursos/Hangout3D.ttf');
+@import url('../recursos/Hangout3D.ttf');
 @font-face {
     font-family:'titulo';
-    src: url('/recursos/Hangout3D.ttf');
+    src: url('../recursos/Hangout3D.ttf');
 }
 
 
