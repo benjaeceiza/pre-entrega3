@@ -1,12 +1,12 @@
-@import url("../recursos/Hangout.ttf");
-@import url("../recursos/Hangout3D.ttf");
+@import url("../recursos/hangout.ttf");
+@import url("../recursos/hangout3d.ttf");
 @font-face {
   font-family: 'enlace';
-  src: url("../recursos/Hangout.ttf"); }
+  src: url("../recursos/hangout.ttf"); }
 
 @font-face {
   font-family: 'titulo';
-  src: url("../recursos/Hangout3D.ttf"); }
+  src: url("../recursos/hangout3d.ttf"); }
 
 * {
   margin: 0;
@@ -50,6 +50,9 @@
     min-height: 100px; }
     .header .nav img {
       height: 40px; }
+    .header .nav .logo:hover {
+      transform: scale(1.1);
+      transition: all 0.3s; }
     .header .nav .navbar-toggler {
       background-color: white; }
     .header .nav .nav-link {
@@ -104,13 +107,12 @@
       height: 70vw; } }
 
 .main {
-  /*---- IFRAME ---- */
-  /* ------------ PAGE RECORRIDO QATAR -------------- */ }
+  /*---- IFRAME ---- */ }
   .main .subtitulo {
     font-family: "enlace";
     font-size: 3vw;
     text-align: start;
-    color: white;
+    color: #353535;
     padding: 1%;
     background-image: url(../recursos/fondo-partido.jpeg);
     border: solid rgba(240, 237, 86, 0.925); }
@@ -141,77 +143,133 @@
     justify-content: center; }
     .main .video iframe {
       margin: 30px 0 30px 0; }
-  .main .conteiner-section {
+  @media (max-width: 700px) {
+    .main .titulo, .main h1 {
+      font-size: 10vw; }
+    .main .subtitulo {
+      font-size: 5vw; }
+    .main #foto {
+      height: 50vw; }
+    .main .video iframe {
+      width: 100%; } }
+
+@media (max-width: 700px) and (max-width: 500px) {
+  .main .section-p .contenedor-m {
+    flex-direction: column; }
+    .main .section-p .contenedor-m img {
+      height: 20vh;
+      margin: 2px; }
+    .main .section-p .contenedor-m .tamano {
+      height: 250px; } }
+
+.main .conteiner-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 50px; }
+  .main .conteiner-section .formacion {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 50px; }
-    .main .conteiner-section .formacion {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      background-image: url(../recursos/cancha.jpg);
-      background-repeat: no-repeat;
-      background-size: cover;
-      border: solid black; }
-      .main .conteiner-section .formacion .linea {
-        display: flex; }
-        .main .conteiner-section .formacion .linea .jugadores {
-          display: flex;
-          flex-direction: column;
-          align-items: center; }
-    .main .conteiner-section .estadisticas {
-      display: flex;
-      flex-direction: column;
-      flex-wrap: wrap;
-      align-items: center;
-      background-image: url(../recursos/fondo-copia.jpeg);
-      background-size: cover;
-      margin: 20px;
-      border-radius: 1%;
-      border: solid rgba(240, 237, 86, 0.925); }
-      .main .conteiner-section .estadisticas .div-estadistica {
+    background-image: url(../recursos/cancha.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: solid black; }
+    .main .conteiner-section .formacion .linea {
+      display: flex; }
+      .main .conteiner-section .formacion .linea .jugadores {
         display: flex;
-        justify-content: center;
-        margin: 10px 0; }
-        .main .conteiner-section .estadisticas .div-estadistica img {
-          height: 30px;
-          margin-top: 8px; }
-        .main .conteiner-section .estadisticas .div-estadistica .parrafo-estadistica {
-          margin-top: 8px;
-          color: white;
-          font-family: 'enlace';
-          font-size: 20px;
-          margin-right: 5px; }
-      .main .conteiner-section .estadisticas .titulo-estadistica {
-        text-align: center;
-        background-color: white;
-        color: #ac9309;
-        border: solid rgba(240, 237, 86, 0.925);
-        min-width: 10vw; }
-      .main .conteiner-section .estadisticas .lista-estadistica {
-        list-style: none;
-        color: black; }
-  .main .banco {
-    background-color: #2f97d3;
-    width: 90%;
-    margin: auto;
-    margin-bottom: 20px;
+        flex-direction: column;
+        align-items: center; }
+        .main .conteiner-section .formacion .linea .jugadores:hover {
+          transform: scale(1.1); }
+  .main .conteiner-section .estadisticas {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    background-image: url(../recursos/fondo-copia.jpeg);
+    background-size: cover;
+    margin: 20px;
     border-radius: 1%;
-    border: solid rgba(240, 237, 86, 0.925);
-    background-image: url(../recursos/fondo-partido.jpeg);
-    background-size: cover; }
-    .main .banco .sup {
+    border: solid rgba(240, 237, 86, 0.925); }
+    .main .conteiner-section .estadisticas .div-estadistica {
       display: flex;
-      justify-content: space-around;
-      align-items: center;
-      flex-wrap: wrap; }
-      .main .banco .sup .jugadores img {
-        margin-bottom: 5px; }
-      .main .banco .sup .jugadores p {
-        width: 70%;
-        margin: auto; }
+      justify-content: center;
+      margin: 10px 0; }
+      .main .conteiner-section .estadisticas .div-estadistica img {
+        height: 30px;
+        margin-top: 8px; }
+      .main .conteiner-section .estadisticas .div-estadistica .parrafo-estadistica {
+        margin-top: 8px;
+        color: #757575;
+        font-family: 'enlace';
+        font-size: 20px;
+        margin-right: 5px; }
+    .main .conteiner-section .estadisticas .titulo-estadistica {
+      text-align: center;
+      background-color: white;
+      color: #ac9309;
+      border: solid rgba(240, 237, 86, 0.925);
+      min-width: 10vw; }
+    .main .conteiner-section .estadisticas .lista-estadistica {
+      list-style: none;
+      color: black; }
+
+.main .banco {
+  background-color: #2f97d3;
+  width: 90%;
+  margin: auto;
+  margin-bottom: 20px;
+  border-radius: 1%;
+  border: solid rgba(240, 237, 86, 0.925);
+  background-image: url(../recursos/fondo-partido.jpeg);
+  background-size: cover; }
+  .main .banco .sup {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap; }
+    .main .banco .sup .jugadores img {
+      margin-bottom: 5px; }
+    .main .banco .sup .jugadores:hover {
+      transform: scale(1.1); }
+    .main .banco .sup .jugadores p {
+      width: 70%;
+      margin: auto; }
+
+@media (max-width: 994px) {
+  .main .conteiner-section .estadisticas {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: start; } }
+
+@media (max-width: 700px) {
+  .main .conteiner-section .formacion {
+    background-position: center;
+    width: 90%; }
+    .main .conteiner-section .formacion .linea .jugadores {
+      margin: 10px 0px; }
+      .main .conteiner-section .formacion .linea .jugadores img {
+        height: 20vw;
+        margin: 0px 10px; }
+      .main .conteiner-section .formacion .linea .jugadores p {
+        font-size: 10px; }
+  .main .conteiner-section .estadisticas {
+    width: 80%;
+    overflow: hidden;
+    margin: auto; } }
+
+.main--activo {
+  background-image: url(../recursos/descarga.jpg);
+  padding-bottom: 10px;
+  background-position: center; }
+
+.main {
+  /* ------------ PAGE RECORRIDO QATAR -------------- */ }
   .main .recorrido {
     display: flex;
     flex-direction: column;
@@ -257,59 +315,30 @@
         box-shadow: 0px 0px 10px 2px black;
         margin-top: 50px; }
   @media (max-width: 994px) {
-    .main .conteiner-section .estadisticas {
-      width: 90%;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-      align-items: start; } }
-  @media (max-width: 700px) {
-    .main .titulo, .main h1 {
-      font-size: 10vw; }
-    .main .subtitulo {
-      font-size: 5vw; }
-    .main #foto {
-      height: 50vw; }
-    .main .video iframe {
-      width: 100%; }
-    .main .conteiner-section .formacion {
-      background-position: center;
-      width: 90%; }
-      .main .conteiner-section .formacion .linea .jugadores {
-        margin: 10px 0px; }
-        .main .conteiner-section .formacion .linea .jugadores img {
-          height: 20vw;
-          margin: 0px 10px; }
-        .main .conteiner-section .formacion .linea .jugadores p {
-          font-size: 10px; }
-    .main .conteiner-section .estadisticas {
-      width: 80%;
-      overflow: hidden;
-      margin: auto; } }
-  @media (max-width: 500px) {
-    .main .section-p .contenedor-m {
-      flex-direction: column; }
-      .main .section-p .contenedor-m img {
-        height: 20vh;
-        margin: 2px; }
-      .main .section-p .contenedor-m .tamano {
-        height: 250px; } }
-
-.main--activo {
-  background-image: url(../recursos/descarga.jpg);
-  padding-bottom: 10px;
-  background-position: center; }
+    .main .recorrido .partido .vidio {
+      width: 80%; } }
 
 .footer {
   background-color: #38B6FF;
-  min-height: 70px; }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 20px; }
+  .footer .footer__div {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .footer .footer__div img {
+      height: 30px; }
+    .footer .footer__div p {
+      color: white; }
   .footer .footer__lista {
     display: flex;
-    justify-content: space-around;
     list-style: none; }
     .footer .footer__lista .footer__item {
-      margin-top: 20px; }
+      margin: 0 20px; }
       .footer .footer__lista .footer__item .footer__link {
         text-decoration: none; }
         .footer .footer__lista .footer__item .footer__link .footer__img {
-          height: 40px; }
+          height: 30px; }

@@ -1,65 +1,5 @@
 .main {
 
-    // TITULOS
-    h1 {
-        @extend .titulo;
-    }
-
-    .subtitulo {
-        font-family: "enlace";
-        font-size: 3vw;
-        text-align: start;
-        color: white;
-        padding: 1%;
-        background-image: url(../recursos/fondo-partido.jpeg);
-        border: $borde;
-    }
-
-    .h2 {
-        padding: 10px;
-        color: rgb(196, 177, 72);
-        text-align: center;
-        font-family: "enlace";
-        width: 80%;
-        margin: auto;
-
-    }
-
-    // SECCION INDEX
-    .section-p {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        .parrafo {
-            width: 80%;
-            text-align: justify;
-            margin: auto;
-            margin: 30px;
-        }
-
-        //CONTENEDOR DE FOTOS
-        .contenedor-m {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-        }
-
-        img {
-            height: 25vw;
-        }
-    }
-
-    /*---- IFRAME ---- */
-    .video {
-        display: flex;
-        justify-content: center;
-
-        iframe {
-            margin: 30px 0 30px 0;
-        }
-    }
-
     //------- PAGES 2022, 1986, 1978 --------
 
     // FORMACION
@@ -86,6 +26,10 @@
                     display: flex;
                     flex-direction: column;
                     align-items: center;
+
+                    &:hover {
+                        transform: scale(1.1);
+                    }
 
                     img {
                         @extend .imagen-jugador;
@@ -122,7 +66,7 @@
 
                 .parrafo-estadistica {
                     margin-top: 8px;
-                    color: white;
+                    color: rgb(117, 117, 117);
                     font-family: 'enlace';
                     font-size: 20px;
                     margin-right: 5px;
@@ -168,6 +112,10 @@
                     margin-bottom: 5px
                 }
 
+                &:hover {
+                    transform: scale(1.1);
+                }
+
                 p {
                     @extend .nombre;
                     width: 70%;
@@ -179,69 +127,6 @@
         }
     }
 
-    /* ------------ PAGE RECORRIDO QATAR -------------- */
-    .recorrido {
-
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        .partido {
-            text-align: center;
-            background-color: rgb(39, 48, 54);
-            width: 90%;
-            padding: 40px 0px;
-            margin: 50px;
-            border-radius: 2%;
-            background-image: url(../recursos/fondo-rojo.jpg);
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
-
-            .titulo-recorrido {
-                display: flex;
-                align-items: center;
-                justify-content: space-around;
-                background-color: #58acdc;
-                width: 80%;
-                border: rgba(0, 0, 0, 0.374) solid;
-                border-radius: 2%;
-                box-shadow: 0px 0px 10px 2px black;
-                margin: auto;
-                margin-top: 20px;
-                background-image: url(../recursos/fondo-partido.jpeg);
-
-                .bandera-recorrido {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    padding: 10px 10px 0px 10px;
-
-                    .pais {
-                        color: white;
-                    }
-                }
-
-                .versus {
-                    font-size: 5vw;
-                    color: white;
-                    font-family: "enlace";
-                }
-            }
-
-            img {
-                width: 100px;
-            }
-
-            .vidio {
-                width: 50%;
-                box-shadow: 0px 0px 10px 2px black;
-                margin-top: 50px;
-            }
-
-        }
-    }
-   
     // MEDIA QUERYS ESTADISTICAS
     @media(max-width:994px) {
         .conteiner-section {
@@ -256,25 +141,8 @@
         }
     }
 
-    // MEDIA QUERYS INDEX + TITULO + SUBTITULO
-    @media(max-width: 700px) {
-        .titulo {
-            font-size: 10vw;
-        }
-
-        .subtitulo {
-            font-size: 5vw;
-        }
-
-        #foto {
-            height: 50vw;
-        }
-
-        .video iframe {
-            width: 100%;
-        }
-
-// MEDIA QUERYS FORMACION JUGADORES
+    // MEDIA QUERYS FORMACION JUGADORES
+    @media(max-width:700px) {
         .conteiner-section {
             .formacion {
                 background-position: center;
@@ -300,25 +168,6 @@
                 width: 80%;
                 overflow: hidden;
                 margin: auto;
-            }
-        }
-    }
-
-    // MEDIA QUERYS INDEX IMAGENES
-    @media(max-width:500px) {
-
-        .section-p {
-            .contenedor-m {
-                flex-direction: column;
-
-                img {
-                    height: 20vh;
-                    margin: 2px;
-                }
-
-                .tamano {
-                    height: 250px;
-                }
             }
         }
     }

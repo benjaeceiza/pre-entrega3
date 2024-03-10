@@ -1,20 +1,42 @@
 .footer {
     background-color: $azulito;
-    min-height: 70px;
+    display: flex;
+    justify-content:center; 
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 20px;
+
+    .footer__div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        img {
+            height: 30px;
+        }
+
+        p{
+            color: white;
+        }
+    }
+
+
     .footer__lista {
         display: flex;
-        justify-content: space-around;
         list-style: none;
+
         .footer__item {
-            margin-top: 20px;
+            margin: 0 20px;
+
             .footer__link {
                 text-decoration: none;
+
                 .footer__img {
-                    height: 40px;
-                
+                    height: 30px;
                 }
             }
-            
+
         }
-    } 
+    }
+
 }
