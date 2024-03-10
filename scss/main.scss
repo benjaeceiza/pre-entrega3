@@ -2,10 +2,11 @@
 @import './utilidades/variables';
 @import './utilidades/reseteo';
 @import './utilidades/extend';
+@import './utilidades/animaciones';
 
 // SECCIONES
 @import './secciones/header';
-@import './secciones/contenido';
+@import './secciones/contenido-index';
 @import './secciones/contenido-pages';
 @import './secciones/contenido-recorrido';
 @import './secciones/footer';

@@ -16,6 +16,15 @@
                 transition:all 0.3s ;
             }
         }
+        
+        .conteiner-estrellas{
+            .animado{
+                animation-name: latido;
+                animation-duration: 2s;
+                animation-iteration-count: 5;
+                
+            }
+        }
 
         .navbar-toggler {
             background-color: white;
@@ -50,48 +59,49 @@
         grid-template-areas:
             "foto2 foto1 foto1 foto4"
             "foto3 foto1 foto1 foto5";
+
+            .foto1 {
+                grid-area: foto1;
+        
+                img {
+                    width: 100%;
+                }
+            }
+        
+            .foto2 {
+                grid-area: foto2;
+        
+                img {
+                    width: 100%;
+                }
+            }
+        
+            .foto3 {
+                grid-area: foto3;
+        
+                img {
+                    width: 100%;
+                }
+            }
+        
+            .foto4 {
+                grid-area: foto4;
+        
+                img {
+                    width: 100%;
+                }
+            }
+        
+            .foto5 {
+                background-color: rgb(17, 210, 210);
+                grid-area: foto5;
+        
+                img {
+                    width: 100%;
+                }
+            }
     }
 
-    .foto1 {
-        grid-area: foto1;
-
-        img {
-            width: 100%;
-        }
-    }
-
-    .foto2 {
-        grid-area: foto2;
-
-        img {
-            width: 100%;
-        }
-    }
-
-    .foto3 {
-        grid-area: foto3;
-
-        img {
-            width: 100%;
-        }
-    }
-
-    .foto4 {
-        grid-area: foto4;
-
-        img {
-            width: 100%;
-        }
-    }
-
-    .foto5 {
-        background-color: rgb(17, 210, 210);
-        grid-area: foto5;
-
-        img {
-            width: 100%;
-        }
-    }
 
     /*---- FOTOS MOBILE ----*/
 

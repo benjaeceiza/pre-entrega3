@@ -42,6 +42,14 @@
   border-radius: 5%;
   box-shadow: 0 0 10px 2px black; }
 
+@keyframes latido {
+  0% {
+    transform: scale(1); }
+  50% {
+    transform: scale(1.3); }
+  100% {
+    transform: scale(1); } }
+
 .header {
   /* ---- GRILLA ---- */
   /*---- FOTOS MOBILE ----*/ }
@@ -53,6 +61,10 @@
     .header .nav .logo:hover {
       transform: scale(1.1);
       transition: all 0.3s; }
+    .header .nav .conteiner-estrellas .animado {
+      animation-name: latido;
+      animation-duration: 2s;
+      animation-iteration-count: 5; }
     .header .nav .navbar-toggler {
       background-color: white; }
     .header .nav .nav-link {
@@ -73,27 +85,27 @@
     box-shadow: 0 0 10px 2px black;
     margin: auto;
     grid-template-areas: "foto2 foto1 foto1 foto4" "foto3 foto1 foto1 foto5"; }
-  .header .foto1 {
-    grid-area: foto1; }
-    .header .foto1 img {
-      width: 100%; }
-  .header .foto2 {
-    grid-area: foto2; }
-    .header .foto2 img {
-      width: 100%; }
-  .header .foto3 {
-    grid-area: foto3; }
-    .header .foto3 img {
-      width: 100%; }
-  .header .foto4 {
-    grid-area: foto4; }
-    .header .foto4 img {
-      width: 100%; }
-  .header .foto5 {
-    background-color: #11d2d2;
-    grid-area: foto5; }
-    .header .foto5 img {
-      width: 100%; }
+    .header .grilla .foto1 {
+      grid-area: foto1; }
+      .header .grilla .foto1 img {
+        width: 100%; }
+    .header .grilla .foto2 {
+      grid-area: foto2; }
+      .header .grilla .foto2 img {
+        width: 100%; }
+    .header .grilla .foto3 {
+      grid-area: foto3; }
+      .header .grilla .foto3 img {
+        width: 100%; }
+    .header .grilla .foto4 {
+      grid-area: foto4; }
+      .header .grilla .foto4 img {
+        width: 100%; }
+    .header .grilla .foto5 {
+      background-color: #11d2d2;
+      grid-area: foto5; }
+      .header .grilla .foto5 img {
+        width: 100%; }
   .header .fotos-mob {
     display: none; }
   @media (max-width: 700px) {
@@ -341,4 +353,4 @@
       .footer .footer__lista .footer__item .footer__link {
         text-decoration: none; }
         .footer .footer__lista .footer__item .footer__link .footer__img {
-          height: 30px; }
+          height: 40px; }
