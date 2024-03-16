@@ -61,6 +61,22 @@
 
         }
     }
+   
+     .titulo-form{
+        text-align: center;
+        font-family: "enlace";
+     }
+    .formulario{
+        text-align: center;
+        width: 70%;
+        margin: auto;
+        background-image: url(../recursos/fondo-partido.jpeg);
+        padding: 5px;
+        border: $borde;
+        .form-label{
+            font-family: enlace;
+        }
+    }
 
     @media(max-width:994px) {
         .recorrido {
