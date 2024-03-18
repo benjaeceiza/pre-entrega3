@@ -323,8 +323,8 @@
       .main .recorrido .partido img {
         width: 100px; }
       .main .recorrido .partido .vidio {
-        width: 50%;
         box-shadow: 0px 0px 10px 2px black;
+        margin: auto;
         margin-top: 50px; }
   .main .titulo-form {
     text-align: center;
@@ -340,7 +340,7 @@
       font-family: enlace; }
   @media (max-width: 994px) {
     .main .recorrido .partido .vidio {
-      width: 80%; } }
+      width: 95%; } }
 
 .footer {
   background-color: #38B6FF;

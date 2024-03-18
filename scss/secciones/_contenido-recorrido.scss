@@ -54,26 +54,30 @@
             }
 
             .vidio {
-                width: 50%;
+            
                 box-shadow: 0px 0px 10px 2px black;
+                margin: auto;
                 margin-top: 50px;
+
             }
 
         }
     }
-   
-     .titulo-form{
+
+    .titulo-form {
         text-align: center;
         font-family: "enlace";
-     }
-    .formulario{
+    }
+
+    .formulario {
         text-align: center;
         width: 70%;
         margin: auto;
         background-image: url(../recursos/fondo-partido.jpeg);
         padding: 5px;
         border: $borde;
-        .form-label{
+
+        .form-label {
             font-family: enlace;
         }
     }
@@ -82,7 +86,7 @@
         .recorrido {
             .partido {
                 .vidio {
-                    width: 80%;
+                    width: 95%;
                 }
             }
         }
